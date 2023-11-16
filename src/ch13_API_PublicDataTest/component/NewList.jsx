@@ -19,14 +19,6 @@ const NewListCss = styled.div`
   }
 `;
 
-// 더미 데이터
-const sampleArticle = {
-  title: "제목",
-  description: "내용",
-  url: "https://www.naver.com",
-  urlToImage: "https://via.placeholder.com/160",
-};
-
 const NewList = ({ category }) => {
 
   const [articles, setArticles] = useState(null);

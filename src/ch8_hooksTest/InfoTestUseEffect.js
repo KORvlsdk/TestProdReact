@@ -22,7 +22,7 @@ const InfoTestUseEffect = () => {
       console.log("후처리 함수 호출 ");
       console.log(name);
     };
-  }, []); 
+  }, [name]); 
 
   //추가, 버튼 추가해서, visible 속성 확인.
   const [visible, setVisible] = useState(false);
