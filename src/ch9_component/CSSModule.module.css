@@ -1,0 +1,21 @@
+/* 자동으로 클래스명이 유니크(중복이 안됨)
+원하는 클래스 이름을 사용하기. */
+
+.wrapper {
+  background: green;
+  padding: 1rem;
+  color: aqua;
+  font-size: 2rem;
+}
+
+.wrapper2 {
+  background: yellow;
+  color: black;
+  border: 1px solid blue;
+}
+
+/* 전역으로 만들어서 사용하고 싶을 경우 */
+:global .testGlobal {
+  font-weight: 800;
+  color: blue;
+}

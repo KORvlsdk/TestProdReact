@@ -1,0 +1,16 @@
+//기존의 scss 에서 사용했던 변수,함수 분리 해보기.
+//재사용할 변수 색깔 선언
+$red: #fa5252;
+$blue: #5255fa;
+$green: #52faac;
+$orange: rgb(250, 163, 82);
+$violet: rgb(172, 82, 250);
+$yellow: rgb(244, 250, 82);
+$navy: rgb(82, 132, 250);
+
+//재사용할 함수 만들기
+@mixin square($size) {
+  $caculated: 32px * $size;
+  width: $caculated;
+  height: $caculated;
+}

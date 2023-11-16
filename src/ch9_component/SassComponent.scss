@@ -1,0 +1,36 @@
+//기존의 scss 에서 사용했던 변수,함수 분리 해보기.
+// 분리된 파일 불러오기.
+@import "./utils.scss";
+// 클래스 들
+.SassTest {
+  display: flex;
+  .box {
+    background: red;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+
+    // 현재 요소를 가리키는 & -> box 를 가리킴
+    &.red {
+      background: red;
+      // 위에서 만든 사각형 square 함수 재사용
+      @include square(1);
+    }
+    // 나머지 6가지 색깔 재사용해서, 박스 만들기 할 예정.
+
+    &.blue {
+      background: blue;
+      // 위에서 만든 사각형 square 함수 재사용
+      @include square(2);
+    }
+
+    &.green {
+      background: green;
+      // 위에서 만든 사각형 square 함수 재사용
+      @include square(3);
+    }
+
+    &:hover {
+      background: black;
+    }
+  }
+}
