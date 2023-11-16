@@ -18,18 +18,11 @@ const InfoTestUseEffect = () => {
   // 2) [] , 빈 배열, 한번만 실행되고
   // 3) [list] , list의 상태가 변경 될 때 마다, 콜백함수 실행이 됨.
   useEffect(() => {
-    console.log("useEffect 호출이됨. ");
-    console.log({
-      name,
-      nickname,
-    });
-    // 후처리 함수 추가하기.
-    // 문법 : return () => {수행할 로직}
     return () => {
       console.log("후처리 함수 호출 ");
       console.log(name);
     };
-  }, []); // 현재, 두번째 매개변수에 모양이 아무것도 없다. 매번 실행 확인 하기.
+  }, []); 
 
   //추가, 버튼 추가해서, visible 속성 확인.
   const [visible, setVisible] = useState(false);

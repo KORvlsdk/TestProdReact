@@ -15,7 +15,6 @@ import { Button } from "antd";
 // 공식 문서
 // https://styled-components.com/docs/basics#getting-started
 import styled from "styled-components";
-import { Component } from "react";
 
 // styled-component 사용해보기
 // 예제

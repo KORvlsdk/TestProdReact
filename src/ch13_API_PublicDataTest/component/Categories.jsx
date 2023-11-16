@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 // 카테고리 목록, 보이는 건 한글, 값은 영어로 할당.
 const categories = [
@@ -28,39 +28,6 @@ const CategoriesBlockCss = styled.div`
   }
 `;
 
-// 기존방식
-// const CategoriesCss = styled.div`
-//   font-size: 1.5rem;
-//   cursor: pointer;
-//   white-space: pre;
-//   text-decoration: none;
-//   color: inherit;
-//   padding-bottom: 0.5rem;
-
-//   &:hover {
-//     color: red;
-//   }
-
-//   // active 클래스 속성 추가.
-//   ${(props) =>
-//     props.active &&
-//     css`
-//       font-weight: 600;
-//       border-bottom: 2px solid violet;
-//       color: aqua;
-//       &:hover {
-//         color: green;
-//       }
-//     `}
-
-//   & + & {
-//     margin-left: 1rem;
-//   }
-// `;
-
-// NavLink 방식. 변경.
-// 기존에 styled.태그명 `속성`
-// 컴포넌트 적용 styled(컴포넌트) `속성`
 const CategoriesCss = styled(NavLink)`
   font-size: 1.5rem;
   cursor: pointer;
@@ -88,25 +55,6 @@ const CategoriesCss = styled(NavLink)`
     margin-left: 1rem;
   }
 `;
-{
-  /* <Categories category={category} onSelect={onSelect} /> */
-}
-//기존 방식
-// const Categories = ({ category, onSelect }) => {
-//   return (
-//     <CategoriesBlockCss>
-//       {categories.map((c) => (
-//         <CategoriesCss
-//           key={c.name}
-//           active={category === c.name}
-//           onClick={() => onSelect(c.name)}
-//         >
-//           {c.text}
-//         </CategoriesCss>
-//       ))}
-//     </CategoriesBlockCss>
-//   );
-// };
 
 // NavLink 방식. 변경.
 const Categories = () => {

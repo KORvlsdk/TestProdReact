@@ -1,7 +1,7 @@
 // 입력을 받는 기능을 따로 분리 작업하는 곳
 // Info , name, nickname 입력 받는 부분을 분리작업.
 //순서1, 설정1
-import React, { useReducer } from "react";
+import { useReducer } from "react";
 
 // 순서2, 설정2 리듀서 함수 만들기.
 const reducer = (state, action) => {

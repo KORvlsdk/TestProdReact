@@ -1,7 +1,6 @@
 import React from "react";
 //순서1 import 모듈 가져오기.
 import styled, { css } from "styled-components";
-import { Button } from "antd";
 import { AiFillApple } from "react-icons/ai";
 
 const StyledComponentsTest = () => {

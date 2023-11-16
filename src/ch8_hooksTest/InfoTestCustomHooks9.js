@@ -2,8 +2,6 @@
 // 불러와서 테스트 할 환경.
 
 import React from "react";
-import { useState } from "react";
-//순서1 설정. 파일 분리한 기능을 불러오기.
 import useInfoInputFunc from "./InfoInputFunc";
 
 const InfoTestCustomHooks9 = () => {
